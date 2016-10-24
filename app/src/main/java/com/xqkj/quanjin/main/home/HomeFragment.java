@@ -51,6 +51,7 @@ public class HomeFragment extends BasicFragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
         findView(view);
+        System.out.print("haha");
 
         showPager(ContentPager.PAGER_SUCCESS);
 
