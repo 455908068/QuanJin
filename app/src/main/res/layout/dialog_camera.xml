@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_camera"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_background"
+        android:gravity="center"
+        android:text="拍照"
+        android:textColor="#343f4b"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_background" />
+
+    <TextView
+        android:id="@+id/tv_alum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_background"
+        android:gravity="center"
+        android:text="相册"
+        android:textColor="#343f4b"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white_background" />
+
+    <TextView
+        android:id="@+id/tv_canel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_background"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#343f4b"
+        android:textSize="16dp" />
+</LinearLayout>
+

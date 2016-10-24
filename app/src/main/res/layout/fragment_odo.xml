@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp">
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_odo_btn_left"
+            android:drawableLeft="@drawable/chu_apply"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="25dp"
+            android:text="申请出货凭单"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/shape_odo_btn_right"
+            android:drawableLeft="@drawable/chu_search"
+            android:drawablePadding="7dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="25dp"
+            android:text="查询出货凭单"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="34dp">
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:text="进度列表"
+                android:textColor="#404040"
+                android:textSize="17sp" />
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="21dp"
+                android:layout_gravity="center_vertical"
+                android:background="#2f8ae8" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <RelativeLayout
+                android:id="@+id/layout_new"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="13.5dp"
+                android:background="@drawable/shape_odo"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/chu_new"
+                    android:drawablePadding="9dp"
+                    android:gravity="center"
+                    android:text="新建"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="(12)"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_pending_audit"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="13.5dp"
+                android:background="@drawable/shape_odo"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/chu_delay"
+                    android:drawablePadding="9dp"
+                    android:gravity="center"
+                    android:text="待审核"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="(12)"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_no_via"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="13.5dp"
+                android:background="@drawable/shape_odo"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/chu_fail"
+                    android:drawablePadding="9dp"
+                    android:gravity="center"
+                    android:text="未通过"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="(12)"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_via"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginTop="13.5dp"
+                android:background="@drawable/shape_odo"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/chu_ok"
+                    android:drawablePadding="9dp"
+                    android:gravity="center"
+                    android:text="通过"
+                    android:textColor="#404040"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:text="(12)"
+                    android:textColor="#828282"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
